@@ -1,0 +1,15 @@
+# Core runtime requirements
+pydantic>=2.0.0
+
+# Optional: Production HTTP server (FastAPI + ASGI runner)
+fastapi>=0.100.0
+uvicorn>=0.23.0
+python-multipart>=0.0.6
+
+# Optional: Local offline Speech-to-Text inference
+# (faster-whisper is recommended for 4x speedup and lower VRAM over vanilla whisper)
+faster-whisper>=1.0.0
+
+# Optional: Cloud API clients
+requests>=2.31.0
+

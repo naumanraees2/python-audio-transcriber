@@ -3,37 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-
-# Environments and Package Managers
-.venv/
-venv/
-ENV/
-env/
-env.bak/
-venv.bak/
-
-# Audio and Media Files (Avoid committing large binaries)
-*.wav
-*.mp3
-*.m4a
-*.flac
-*.ogg
-*.aac
-*.wma
-# (Optional) keep samples directory placeholder if needed:
-!samples/
-!samples/.gitkeep
-
-# Machine Learning Models and Checkpoints (Whisper, PyTorch, HuggingFace)
-*.pt
-*.bin
-*.onnx
-*.safetensors
-.cache/
-models/
-
-# Distribution and Packaging
+.Python
 build/
+develop-eggs/
 dist/
 downloads/
 eggs/
@@ -44,36 +16,111 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+
+# Virtual Environments & Package Managers
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+conda-env/
+pip-log.txt
+pip-wheel-metadata/
+
+# Audio, Video and Media Files (Avoid committing large binaries)
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.aac
+*.wma
+*.opus
+*.webm
+*.mp4
+*.mkv
+*.mov
+*.avi
+
+# Whitelist bundled test/demo samples directory and its contents
+!samples/
+!samples/**
+
+# Pipeline Outputs & Upload Directories
+output/
+outputs/
+transcripts/
+subtitles/
+uploads/
+temp_uploads/
+
+# Machine Learning Models and Checkpoints (Whisper, faster-whisper, HuggingFace, PyTorch)
+*.pt
+*.bin
+*.onnx
+*.safetensors
+*.gguf
+*.tflite
+models/
+whisper_models/
+weights/
+.cache/
+.huggingface/
+.torch/
 
 # Testing, Coverage and Linters
 .pytest_cache/
 .coverage
 .coverage.*
+coverage.xml
+*.cover
 htmlcov/
 .tox/
 .nox/
 .mypy_cache/
 .ruff_cache/
+.hypothesis/
 
-# Logs and Temporary Files
+# Logs, PIDs and Temporary Files
 *.log
 *.tmp
 *.temp
+*.pid
 /tmp/
 
 # Environment Variables and Secrets
 .env
 .env.*
 !.env.example
+!.env.template
+*.pem
+*.key
+credentials.json
+client_secret*.json
 
-# IDE and OS Metadata
-.DS_Store
-Thumbs.db
+# Jupyter & Interactive Notebooks
+.ipynb_checkpoints
+
+# IDEs and Text Editors
 .idea/
 .vscode/
+*.code-workspace
 *.swp
 *.swo
 *~
+
+# Operating System Files (macOS, Windows, Linux)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
