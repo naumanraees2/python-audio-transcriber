@@ -1,0 +1,79 @@
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments and Package Managers
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Audio and Media Files (Avoid committing large binaries)
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.aac
+*.wma
+# (Optional) keep samples directory placeholder if needed:
+!samples/
+!samples/.gitkeep
+
+# Machine Learning Models and Checkpoints (Whisper, PyTorch, HuggingFace)
+*.pt
+*.bin
+*.onnx
+*.safetensors
+.cache/
+models/
+
+# Distribution and Packaging
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing, Coverage and Linters
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.temp
+/tmp/
+
+# Environment Variables and Secrets
+.env
+.env.*
+!.env.example
+
+# IDE and OS Metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
